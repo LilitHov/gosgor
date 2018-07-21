@@ -1,0 +1,194 @@
+@import "fonts.css";
+@import "media-query.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat-light', sans-serif;
+    color: #E5E4E6;
+}
+
+a {
+    font-family: 'Montserrat-light', sans-serif;
+    color: #E5E4E6;
+}
+
+/*header*/
+.clean-nav {
+    background: #A3D444;
+}
+
+.navbar-light.clean-nav .nav-link {
+    font-family: 'Montserrat-light', sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+}
+
+/*effect-underline*/
+.navbar-light.clean-nav .nav-link:after,
+.hover-underline:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.navbar-light.clean-nav .nav-link:hover:after,
+.hover-underline:hover:after{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*effect underline*/
+.clean-logo {
+    width: 90px;
+    height: 85px;
+}
+
+.clean-nav-toogler.navbar-toggler {
+    outline: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~header~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~left aside block~~~~~~~~~~~~~~~~~~*/
+.cleaning-system{
+    /*background: rgb(0,38,51);*/
+    background: #002633;
+    color: #A3D444;
+}
+.cleaning-system > div{
+    border-bottom: 2px solid rgba(163,212,68,0.1);
+}
+h1{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+h5{
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: center;
+}
+.open-time-and-phone > li > a{
+    color: #A3D444;
+    text-decoration: none;
+}
+.open-time-and-phone > li > a:hover{
+    text-decoration: none;
+}
+.bid-list li a{
+    text-transform: capitalize;
+    color: #A3D444;
+    font-size: 20px;
+    cursor: pointer;
+}
+.bid-list li a:hover{
+    text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~left aside block~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~changing part~~~~~~~~~~~~~~~~~~*/
+
+/*phone-call*/
+.call-cleaner {
+    height: 300px;
+    background: url("../images/background-eco.jpg");
+    background-size: cover;
+}
+
+.call-animation {
+    background: #A3D444;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: solid 5px #b3db59;
+    animation: play 2s ease infinite;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    right: 6%;
+    top: 20%;
+}
+
+.animating-phone {
+    width: 135px;
+    height: 135px;
+    line-height: 135px;
+    border-radius: 100%;
+    position: absolute;
+    left: 28%;
+    font-size: 60px;
+    color: #002633;
+}
+
+.animating-phone:hover {
+    color: #ffffff;
+    transition: color 0.1s ease-in;
+}
+
+@keyframes play {
+
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4), 0 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    25% {
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4), 0 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+/*phone-call*/
+/*services*/
+.service-item {
+    background: #002633;
+    border-radius: 0 30%;
+    padding: 7% 5% 13% 5%;
+}
+
+.service-item h3,
+.service-item p {
+    color: #ffffff;
+    font-family: 'Montserrat-light', sans-serif;;
+}
+.service-item img{
+    width: 200px;
+    height: 200px;
+}
+
+/*services*/
+
+/*changing part*/
+
+
+
+
+/*online help*/
+.online-help{
+    padding: 1% 2%;
+    background: #A3D444;
+    right: 0;
+    top: 50%;
+    border-radius: 0 0 30px 30px;
+    transform: rotate(90deg);
+}
+
+/*online help*/
