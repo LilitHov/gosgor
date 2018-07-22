@@ -17,7 +17,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light clean-nav">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand ml-md-5 clean-logo-link" href="#">
             <img src="images/clean-logo.png" alt="Госпожа горничная логотип" class="clean-logo">
         </a>
         <button class="navbar-toggler clean-nav-toogler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,19 @@
                     <h1>Госпожа горничная</h1>
                     <h5>клининговая услуга</h5>
                     <ul class="list-unstyled open-time-and-phone mt-5 ">
-                        <li class="mb-1 hover-underline p-1">
+                        <li class="p-3 mt-2 ">
+                            <form action="#">
+                                <div class="form-group row search-item">
+                                    <label for="aside-search-input" class="col-form-label">
+                                        <i class="fas fa-search"></i>
+                                    </label>
+                                    <div>
+                                        <input class="form-control pr-0" type="search"  id="aside-search-input">
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="mb-1 hover-underline p-1 call-us">
                             <a href="tel:+79262489922" class="">
                                 <i class="fas fa-phone "></i>
                                 +7(926)248-9922
@@ -82,6 +94,168 @@
                         </li>
                     </ul>
                 </div>
+                <!--accordion-->
+                <div class="accordion mt-4 pb-2" id="cleanAsideAccordion">
+                    <div class="clear-aside-card">
+                        <div class="card-header p-0" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link hover-underline pl-0 mr-0 position-relative text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    объекты уборки <i class="fas fa-plus position-absolute ml-5"></i>
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#cleanAsideAccordion">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="hover-underline">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear-aside-card">
+                        <div class="card-header p-0" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed hover-underline pl-0 mr-0 position-relative text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    виды уборки <i class="fas fa-plus position-absolute ml-5"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#cleanAsideAccordion">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="hover-underline">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear-aside-card">
+                        <div class="card-header p-0" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed hover-underline pl-0 mr-0 position-relative text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    мытье окон <i class="fas fa-plus position-absolute ml-5"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#cleanAsideAccordion">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="hover-underline">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear-aside-card">
+                    <div class="card-header p-0" id="heading-4">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed hover-underline pl-0 mr-0 position-relative text-left" type="button" data-toggle="collapse" data-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                после ремонта <i class="fas fa-plus position-absolute ml-5"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-4" class="collapse" aria-labelledby="headingThree" data-parent="#cleanAsideAccordion">
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="hover-underline">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="hover-underline">
+                                    <a href="#">2</a>
+                                </li>
+                                <li class="hover-underline">
+                                    <a href="#">3</a>
+                                </li>
+                                <li class="hover-underline">
+                                    <a href="#">4</a>
+                                </li>
+                                <li class="hover-underline">
+                                    <a href="#">5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <div class="clear-aside-card">
+                        <div class="card-header p-0" id="heading-5">
+                            <h5 class="mb-0 ">
+                                <button class="btn btn-link collapsed hover-underline pl-0 mr-0 position-relative text-left" type="button" data-toggle="collapse" data-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                    после ремонта <i class="fas fa-plus  position-absolute"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse-5" class="collapse" aria-labelledby="headingThree" data-parent="#cleanAsideAccordion">
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="hover-underline">
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li class="hover-underline">
+                                        <a href="#">5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--accordion-->
+                <div  class="mt-4">
+                    <ul class="list-unstyled bid-list">
+                        <li class="hover-underline p-1">
+                            <a href="#">Cертификаты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!--left aside block-->
             <!--changing part-->
@@ -91,9 +265,11 @@
                    <div class="row call-cleaner">
                        <div class="col">
                            <div class="call-animation">
-                               <a href="tel:+79262489922" class="animating-phone">
-                                   <i class="fas fa-phone "></i>
-                               </a>
+                               <div>
+                                   <a href="tel:+79262489922" class="animating-phone">
+                                       <i class="fas fa-phone "></i>
+                                   </a>
+                               </div>
                            </div>
                        </div>
                    </div>
@@ -113,8 +289,8 @@
                               <figure class="figure text-center service-item">
                                   <img src="images/clean-2.png" class="figure-img img-fluid rounded" alt="Cleaning">
                                   <figcaption class="figure-caption text-center">
-                                      <h3>Качественно</h3>
-                                      <p>Все клинеры прошли пять этапов отбора и дополнительное обучение у наставников с многолетним опытом</p>
+                                      <h3> Многофунционально</h3>
+                                      <p>Можно выбрать дополнительные услуги — например, мытье посуды или глажку белья</p>
                                   </figcaption>
                               </figure>
                           </div>
@@ -122,13 +298,20 @@
                               <figure class="figure text-center service-item">
                                   <img src="images/clean-3.png" class="figure-img img-fluid rounded" alt="Cleaning">
                                   <figcaption class="figure-caption text-center">
-                                      <h3>Качественно</h3>
-                                      <p>Все клинеры прошли пять этапов отбора и дополнительное обучение у наставников с многолетним опытом</p>
+                                      <h3>Гарантированно</h3>
+                                      <p>Не устроило качество? Уберемся еще раз бесплатно или вернем вам деньги</p>
                                   </figcaption>
                               </figure>
                           </div>
                     </div>
                    <!--services-->
+                    <!--advertising-->
+                    <div class="row advertising mb-5">
+                            <div class="col">
+
+                            </div>
+                    </div>
+                    <!--advertising-->
                </div>
             </div>
             <!--changing part-->
@@ -138,12 +321,48 @@
 
 <!--online help-->
 <div class="online-help  position-fixed">
-    OnLine  Помощь
+    <a href="#">    OnLine  Помощь</a>
 </div>
 <!--online help-->
-
-
 <!--content-->
+<footer>
+    <div class="footer-green-line">
+
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col mt-5">
+                    <h3>Мы в социальных сетях</h3>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col footer-soc-icons text-center mt-3 pb-2">
+                <ul class="list-unstyled list-inline-mb-0">
+                    <li class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-skype"></i></a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-vk"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col  text-center mt-3 footer-navigation">
+                <ul class="list-unstyled list-inline-mb-0">
+                    <li class="mr-md-4 list-inline-item"><a href="#">Главная</a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#">Цены</a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#">Калькулятор</a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#">Новости</a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#">Some text</a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#">Some text</a></li>
+                    <li  class="mr-md-4 list-inline-item"><a href="#">О нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
 
 
 

@@ -6,17 +6,22 @@ body {
     padding: 0;
     font-family: 'Montserrat-light', sans-serif;
     color: #E5E4E6;
+    /*height: 1500px;*/
 }
 
 a {
     font-family: 'Montserrat-light', sans-serif;
     color: #E5E4E6;
 }
-
+input:active, input:focus,input:hover{
+    outline: none !important;
+}
 /*header*/
 .clean-nav {
     background: #A3D444;
+    padding: 2% 0;
 }
+
 
 .navbar-light.clean-nav .nav-link {
     font-family: 'Montserrat-light', sans-serif;
@@ -53,8 +58,12 @@ a {
 
 /*effect underline*/
 .clean-logo {
-    width: 90px;
-    height: 85px;
+    width: 95px;
+    height: 95px;
+}
+.clean-logo-link{
+    position: absolute;
+    bottom: -4px;
 }
 
 .clean-nav-toogler.navbar-toggler {
@@ -72,7 +81,7 @@ a {
     border-bottom: 2px solid rgba(163,212,68,0.1);
 }
 h1{
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 h5{
@@ -87,23 +96,88 @@ h5{
 .open-time-and-phone > li > a:hover{
     text-decoration: none;
 }
+.open-time-and-phone i {
+    transform: rotate(90deg);
+}
+.bid-list li {
+    cursor: pointer;
+}
 .bid-list li a{
     text-transform: capitalize;
     color: #A3D444;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 .bid-list li a:hover{
     text-decoration: none;
 }
+.open-time-and-phone .call-us{
+    cursor: pointer;
+}
+#aside-search-input{
+    background: none;
+    border: none;
+    outline: none;
+}
+.search-item{
+    border-bottom: 1px solid #A3D444;
+}
+.search-item label{
+    cursor: pointer;
+}
+.search-item input,
+.search-item input:focus,
+.search-item input:active{
+    color: #A3D444;
 
-/*~~~~~~~~~~~~~~~~~~left aside block~~~~~~~~~~~~~~~~~~*/
+}
+.form-control.search-item:active,
+  .form-control.search-item:focus,
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.clear-aside-card{
+    background: none;
+}
+.clear-aside-card button{
+color: #A3D444;
+    text-transform: capitalize;
+    font-size: 18px;
+    display: inherit;
+    width: 100%;
+}
+.clear-aside-card button>i{
+    right: 0;
+}
+.clear-aside-card button:hover,
+.clear-aside-card button:focus{
+    text-decoration: none;
+    color: #A3D444;
+}
+.clear-aside-card .card-header{
+    border-bottom: none;
+}
+.clear-aside-card .card-body li{
+    cursor: pointer;
+}
+.clear-aside-card .card-body li>a{
+    color: #A3D444;
+}
+.clear-aside-card .card-body li>a:hover,
+.clear-aside-card .card-body li>a:active{
+    color: #A3D444;
+    text-decoration: none;
+}
+
+    /*~~~~~~~~~~~~~~~~~~left aside block~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~changing part~~~~~~~~~~~~~~~~~~*/
 
 /*phone-call*/
 .call-cleaner {
     height: 300px;
     background: url("../images/background-eco.jpg");
+    background-position-x: 20%;
     background-size: cover;
 }
 
@@ -113,7 +187,7 @@ h5{
     height: 135px;
     margin: 0 auto;
     border-radius: 100%;
-    border: solid 5px #b3db59;
+    border: solid 5px #bde75e;
     animation: play 2s ease infinite;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -122,7 +196,15 @@ h5{
     right: 6%;
     top: 20%;
 }
+.call-animation>div{
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border: solid 5px #b3db59;
+    margin: 0 auto;
 
+
+}
 .animating-phone {
     width: 135px;
     height: 135px;
@@ -158,15 +240,18 @@ h5{
 
 /*phone-call*/
 /*services*/
+.services>div>figure{
+    height: 415px;
+}
 .service-item {
-    background: #002633;
+    background: #A3D444;
     border-radius: 0 30%;
     padding: 7% 5% 13% 5%;
 }
 
 .service-item h3,
 .service-item p {
-    color: #ffffff;
+    color: #002633;
     font-family: 'Montserrat-light', sans-serif;;
 }
 .service-item img{
@@ -175,6 +260,12 @@ h5{
 }
 
 /*services*/
+.advertising{
+    background: url("../images/eco-cleaners-london-premiumclean.jpg");
+    height: 540px;
+    background-size: 100% 100%;
+
+}
 
 /*changing part*/
 
@@ -188,7 +279,66 @@ h5{
     right: 0;
     top: 50%;
     border-radius: 0 0 30px 30px;
+    transform-origin: right top 0;
     transform: rotate(90deg);
+    cursor: pointer;
+}
+.online-help:hover{
+    background: #002633;
+    transition: all 0.2s ease-in;
+}
+.online-help a{
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.online-help a:hover {
+    text-decoration: none;
+
 }
 
 /*online help*/
+
+
+/*footer*/
+footer{
+    background: #002633;
+    padding-bottom: 1%;
+}
+footer h3{
+    color: #A3D444;
+}
+.footer-green-line{
+    height: 10px;
+    background: #A3D444;
+}
+.footer-soc-icons{
+    border-bottom: 2px solid rgba(163,212,68,0.1);
+}
+.footer-soc-icons li{
+    cursor: pointer;
+    background: #A3D444;
+    width: 65px;
+    border-radius: 0 30%;
+    height: 50px;
+    line-height: 50px;
+}
+.footer-soc-icons li>a{
+    background: #A3D444;
+    color: #ffffff;
+    font-size: 26px;
+
+}
+.footer-soc-icons li:hover ,
+.footer-soc-icons li a:hover{
+    transition: color 0.2s ease-in;
+    color: #002633;
+    text-decoration: none;
+}
+.footer-navigation ul li a:hover{
+    text-decoration: none;
+    color: #A3D444;
+    transition: color 0.2s ease-in;
+
+}
+/*footer*/
