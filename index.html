@@ -16,70 +16,76 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light clean-nav">
-        <a class="navbar-brand ml-md-5 clean-logo-link" href="#">
-            <img src="images/clean-logo.png" alt="Госпожа горничная логотип" class="clean-logo">
-        </a>
-        <button class="navbar-toggler clean-nav-toogler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <nav class="navbar navbar-expand-lg navbar-light clean-nav">
+                    <a class="navbar-brand ml-1 ml-md-5 clean-logo-link" href="#">
+                        <img src="images/clean-logo.png" alt="Госпожа горничная логотип" class="clean-logo">
+                    </a>
+                    <button class="navbar-toggler clean-nav-toogler position-absolute" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Главная</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Цены</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Калькулятор</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Новости</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Some text</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Some text</a>
-                </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">О нас</a>
-                </li>
-            </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto clean-nav-list">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Главная</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Цены</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Калькулятор</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Новости</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Some text</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">Some text</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#">О нас</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </nav>
+    </div>
 </header>
 <!--content-->
 <main>
     <div class="container-fluid " >
         <div class="row">
             <!--left aside block-->
-            <div class="col-sm-2 cleaning-system">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2 cleaning-system">
                 <div class="mt-5">
                     <h1>Госпожа горничная</h1>
                     <h5>клининговая услуга</h5>
                     <ul class="list-unstyled open-time-and-phone mt-5 ">
-                        <li class="p-3 mt-2 ">
+                        <li class="mt-2 ">
                             <form action="#">
-                                <div class="form-group row search-item">
-                                    <label for="aside-search-input" class="col-form-label">
+                                <div class="form-group  search-item">
+                                    <label for="aside-search-input" class="col-form-label position-absolute">
                                         <i class="fas fa-search"></i>
                                     </label>
                                     <div>
-                                        <input class="form-control pr-0" type="search"  id="aside-search-input">
+                                        <input class="form-control pr-2 pl-4" type="search"  id="aside-search-input">
                                     </div>
                                 </div>
                             </form>
                         </li>
-                        <li class="mb-1 hover-underline p-1 call-us">
+                        <li class="mb-1 hover-underline p-1 call-us text-center text-md-left">
                             <a href="tel:+79262489922" class="">
-                                <i class="fas fa-phone "></i>
+                                <i class="fas fa-phone mr-2"></i>
                                 +7(926)248-9922
                             </a>
                         </li>
-                        <li >
+                        <li class="text-center text-md-left">
                             Мы открыты - с 09:00 до 18:00
                         </li>
                     </ul>
@@ -259,7 +265,7 @@
             </div>
             <!--left aside block-->
             <!--changing part-->
-            <div class="col-sm-10  p-0">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-10 p-0">
                <div class="container-fluid">
                    <!--/*phone-call*/-->
                    <div class="row call-cleaner">
@@ -267,7 +273,7 @@
                            <div class="call-animation">
                                <div>
                                    <a href="tel:+79262489922" class="animating-phone">
-                                       <i class="fas fa-phone "></i>
+                                       <i class="fas fa-phone-volume"></i>
                                    </a>
                                </div>
                            </div>
@@ -275,30 +281,30 @@
                    </div>
                    <!--/*phone-call*/-->
                    <!--services-->
-                      <div class="row services mt-sm-4 p-1">
-                        <div class="col  ">
+                      <div class="row services ">
+                        <div class="col-12  col-lg-4 services-fr">
                             <figure class="figure text-center service-item">
-                                <img src="images/clean-1.png" class="figure-img img-fluid rounded" alt="Cleaning">
+                                <img src="images/clean-1.png" class="figure-img img-fluid rounded mb-3" alt="Cleaning">
                                 <figcaption class="figure-caption text-center">
-                                    <h3>Качественно</h3>
+                                    <h3>Современно</h3>
                                     <p>Все клинеры прошли пять этапов отбора и дополнительное обучение у наставников с многолетним опытом</p>
                                 </figcaption>
                             </figure>
                         </div>
-                          <div class="col  ">
+                          <div class="col-12   col-lg-4 services-sc">
                               <figure class="figure text-center service-item">
-                                  <img src="images/clean-2.png" class="figure-img img-fluid rounded" alt="Cleaning">
+                                  <img src="images/clean-2.png" class="figure-img img-fluid rounded mb-3" alt="Cleaning">
                                   <figcaption class="figure-caption text-center">
-                                      <h3> Многофунционально</h3>
+                                      <h3> Профессионально</h3>
                                       <p>Можно выбрать дополнительные услуги — например, мытье посуды или глажку белья</p>
                                   </figcaption>
                               </figure>
                           </div>
-                          <div class="col  ">
+                          <div class="col-12  col-lg-4 services-th">
                               <figure class="figure text-center service-item">
-                                  <img src="images/clean-3.png" class="figure-img img-fluid rounded" alt="Cleaning">
+                                  <img src="images/clean-3.png" class="figure-img img-fluid rounded mb-3" alt="Cleaning">
                                   <figcaption class="figure-caption text-center">
-                                      <h3>Гарантированно</h3>
+                                      <h3>Выгодно</h3>
                                       <p>Не устроило качество? Уберемся еще раз бесплатно или вернем вам деньги</p>
                                   </figcaption>
                               </figure>
@@ -319,11 +325,7 @@
     </div>
 </main>
 
-<!--online help-->
-<div class="online-help  position-fixed">
-    <a href="#">    OnLine  Помощь</a>
-</div>
-<!--online help-->
+
 <!--content-->
 <footer>
     <div class="footer-green-line">
@@ -338,11 +340,11 @@
         <div class="row ">
             <div class="col footer-soc-icons text-center mt-3 pb-2">
                 <ul class="list-unstyled list-inline-mb-0">
-                    <li class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-skype"></i></a></li>
-                    <li  class="mr-md-4 list-inline-item"><a href="#"><i class="fab fa-vk"></i></a></li>
+                    <li class="mb-4 mr-md-4 list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li  class="mb-4 mr-md-4 list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li  class="mb-4 mr-md-4 list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li  class="mb-4 mr-md-4 list-inline-item"><a href="#"><i class="fab fa-skype"></i></a></li>
+                    <li  class="mb-4 mr-md-4 list-inline-item"><a href="#"><i class="fab fa-vk"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -362,7 +364,13 @@
     </div>
 </footer>
 
-
+<!--online help-->
+<div class="online-help  position-fixed">
+    <a href="#" class="p-2">    OnLine  Помощь</a>
+</div>
+<!--online help-->
+<!-- Back to top button -->
+<a id="to-top-button"><i class="fas fa-chevron-up mt-1"></i></a>
 
 
 
